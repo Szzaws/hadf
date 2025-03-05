@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هادف</title>
+    <!-- رابط لملف CSS الخاص بـ Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- رابط لملف CSS مخصص لتصميم الموقع -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1d1f2f;
+            padding: 15px 0;
+            border-bottom: 3px solid #ce12f3;
+        }
+
+        .navbar .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navbar-brand img {
+            width: 105px; /* حجم اللوجو */
+            height: 45px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #bf12f3;
+            border-bottom: 2px solid #c612f3;
+        }
+
+        .banner {
+            background-image: url('https://via.placeholder.com/1920x800?text=Shiny+Banner');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-body {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .card-text {
+            color: #7f8c8d;
+        }
+
+        .btn-primary {
+            background-color: #bf12f3;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #b822e6;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .video-container video {
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الرأس مع القائمة العلوية -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <!-- لوجو الموقع في القائمة العلوية -->
+            <a class="navbar-brand" href="#">
+                <img src="1680874355604.webp" alt="شعار الموقع"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل القائمة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">المسلسلات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">البث المباشر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home1.html">الاعدادات</a> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الإعلان/banner -->
+    <div class="banner">
+        <h1>شاهد أحدث المتسلسلات والبث المباشر الآن!</h1>
+    </div>
+
+    <!-- محتوى الموقع -->
+    <div class="container">
+        <div class="row">
+            <!-- عرض المتسلسلات -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="1614254758178.webp" class="card-img-top" alt="عنوان التسلسل">
+                    <div class="card-body">
+                        <h5 class="card-title">سنين</h5>
+                        <p class="card-text">وصف قصير للتسلسل يوضح نوعه وموضوعه بشكل جذاب.</p>
+                        <a href="video.html" class="btn btn-primary">شاهد الآن</a>
+                    </div>
+                </div>
+            </div>
+            
+               
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="images (1).jpeg" class="card-img-top" alt="عنوان التسلسل">
+                    <div class="card-body">
+                        <h5 class="card-title">رهن اعتقال</h5>
+                        <p class="card-text">وصف قصير للتسلسل يوضح نوعه وموضوعه بشكل جذاب.</p>
+                        <a href="video1.html" class="btn btn-primary">شاهد الآن</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
+
+<style>
+    .animated-divider {
+        border: none;
+        height: 3px;
+        background: #007bff;
+        animation: pulse 1.5s infinite alternate;
+    }
+    @keyframes pulse {
+        0% { opacity: 0.3; }
+        100% { opacity: 1; }
+    }
+</style>
+
+        
+        <div class="video-container">
+            <h2>البث المباشر</h2>
+            <video controls>
+                <source src="videoplayback (1).mp4" type="video/mp4">
+                متصفحك لا يدعم مشغل الفيديو.
+            </video>
+        </div>
+    </div>
+
+    
+    <!-- رابط لملف JavaScript الخاص بـ Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<a href="https://wa.me/0504780407" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<style>
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        animation: bounce 1.5s infinite;
+        transition: background 0.3s;
+    }
+    .whatsapp-button img {
+        width: 35px;
+    }
+    .whatsapp-button:hover {
+        background-color: #1EBE5D;
+    }
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+</style>
+<footer class="footer">
+    <p>© <span id="year"></span> جميع الحقوق محفوظة | تصميم <a href="home2.html">عبدالملك</a></p>
+</footer>
+
+<style>
+    .footer {
+        text-align: center;
+        padding: 15px;
+        background: #1e1e1e;
+        color: white;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 30px; /* يترك مسافة بين المحتوى والفوتر */
+    }
+    .footer a {
+        color: #ff9800;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
